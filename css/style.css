@@ -232,7 +232,23 @@ table.bio caption{
 .my-th{
     color: brown;
 }
+img+h1{
+    margin-top: 15px;
+}
+.bio td:first-child,
+.bio th:first-child{
+    background-color: beige;
+}
+.bio tr:first-child{
+    background-color: beige;
+}
 
+#form select{
+    background-color: aqua;
+    height: auto;
+    width: 24rem;
+    padding: 15px;
+}
 
 #form {
     background-color: chartreuse;
@@ -241,6 +257,7 @@ table.bio caption{
     border-radius: 20px;
     padding: 20px;
 }
+
 #form input{
     background-color: blueviolet;
     border-radius: 5px;
@@ -252,10 +269,12 @@ table.bio caption{
 
 #form input{
     background-color: aqua;
+    width: 22.8rem;
+    padding: 15px;
 }
 
 #form textarea{
-    background-color: darkgreen;
+    background-color: aqua;
     border-radius: 5px;
     padding: 5px 10px 10px;
     border: 1px blue;
@@ -265,16 +284,18 @@ table.bio caption{
 }
 
 #form textarea[disabled]{
-    background-color: chartreuse;
+    background-color: greenyellow;
     border: gray 1px solid;
 }
-img+h1{
-    margin-top: 15px;
-}
-.bio td:first-child,
-.bio th:first-child{
+
+#form input[type="submit"]{
     background-color: beige;
 }
-.bio tr:first-child{
-    background-color: beige;
+#form input[type="submit"]:hover{
+    color: rgb(224, 0, 253);
 }
+#form input[type="checkbox"]{
+    width: 20px;
+}
+
+

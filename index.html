@@ -65,43 +65,56 @@
         </section>
         <h2>Обратная связь</h2>
         <form id="form" action="">
-        <label for="login">Введите логин</label><br>
+        <label for="topic">Тема</label><br>
+        <select  name="topic" id="topic" required>
+            <option value="1">Заказать услугу</option>
+            <option value="2">Оставить отзыв/замечание</option>
+            <option value="3">Предложить сотрудничество</option>
+            <option value="4">Другое</option>
+        </select>
+
         <div class="form_item">
-        <input type="text" id="login" placeholder="Логин" required><br>
+        <label for="name">Имя</label><br>
+        <input type="name" id="name" placeholder="Введите имя"  required ><br>
         </div>
 
-        <label for="passwordd">Введите пароль</label><br>
-        <input type="password" id="passwordd" placeholder="Пароль" required><br>
+        <div class="form_item">
+        <label for="email">E-mail</label><br>
+        <input type="email" id="email" placeholder="Введите E-mail" required><br>
+        </div>
 
-        <label for="mail">Введите почту</label><br>
-        <input type="email" id="mail" placeholder="Электронная почта" required><br>
+        <div class="form_item">
+        <label for="phone">Номер телефона</label><br>
+        <input type="phone" id="phone" placeholder="Введите номер телефона" required>
+        </div>
 
-        <input type="radio" id="male" name="gender">
-        <label for="male">M</label>
-        <input type="radio" id="female" name="gender" checked>
-        <label for="female">W</label><br>
+        <div class="form_item">
+        <label for="date">Введите дату</label>
+        <input type="date" id="date">
+        </div>
 
-        <label for="rolw">Выберите роль</label><br>
-        <select id="rolw" required>
-            <option value="user">Пользователь</option>
-            <option value="admin">Администратор</option>
-            <option value="boss">БОССИК ПАЦАНЧИИК</option>
-        </select><br>
+        <div class="form_item">
+        <input type="checkbox" id="checkbox" required>
+        <label for="checkbox">Согласие с политекой конфиденциальности</label>
+        </div>
 
-        <label for="comment">Комментарий</label><br>
-        <textarea id="coomment" placeholder="Ваш Комментарий" disabled></textarea><br>
-
-
+        <div class="form_item">
+        <input type="checkbox" id="checkbox">
+        <label for="checkbox">Согласие на рассылку</label>
+        </div>
 
 
-        <input type="submit" value="Зарегистрироватся">
-        <input type="reset">
+
+        <label for="comment">Текст сообщения</label><br>
+        <textarea id="coomment" placeholder="Ваш Комментарий" required></textarea><br>
+
+        <input type="submit" value="Отправить">
     </form>
     </main>
     <footer>
         <p>&copy; Гайнудинов Ильнар, 2025 г.</p>
         <a href="tel:+7(666) 666 66 66">+7(666) 666 66 66</a>
-        <a href="mailto:suslik@mail.ru">suslik@mail.ru</a>
+        <a href="mailto:su slik@mail.ru">suslik@mail.ru</a>
         <p>Вы можете найти меня <a target="_blank" href="https://midis.ru/specialities/upravlenie-it-proektami/">здесь</a></p>
         <a  href="https://www.amazon.com/" target="_blank"><img width="50px" height="50px" src="img/amazon.svg" alt="Амазон">
         <a  href="https://www.apple.com/" target="_blank"><img width="50px" height="50px" src="img/apple.svg" alt="Apple">
