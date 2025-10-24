@@ -1,0 +1,280 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: "Lobster", sans-serif;
+}
+
+body {
+    background-color: rgb(6, 230, 192);
+}
+
+header {
+    background-color: aqua;
+    text-align: center;
+    padding: 40px 0;
+}
+
+footer {
+    background-color: aqua;
+    padding: 20px 2rem;
+}
+
+h2 {
+    text-decoration: underline;
+    text-align: center;
+    font-family: "Stalinist One", sans-serif;
+}
+
+#about {
+    background-color: bisque;
+    text-align: center;
+    padding: 2rem;
+}
+
+#articles {
+    background-color: chocolate;
+    padding: 2rem;
+}
+
+#content {
+    padding: 2rem;
+}
+
+p{
+    text-align: justify;
+    font-size: 1.5rem;
+    line-height: 2rem;
+}
+p::first-line{
+    letter-spacing: 10px;
+}
+
+
+h1 {
+    text-decoration: overline;
+    text-transform: uppercase;
+    font-family: "Stalinist One", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 2.5rem;
+}
+
+nav {
+    padding: 2rem;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+time {
+    text-align: center;
+    display: block;
+}
+
+dd {
+    text-align: justify;
+    font-size: 1.5rem;
+    line-height: 2rem;
+}
+
+dt {
+    text-align: justify;
+    font-size: 1.5rem;
+    line-height: 2rem;
+}
+
+li {
+    text-align: justify;
+    font-size: 2rem;
+    line-height: 2rem;
+}
+
+blockquote {
+    text-align: justify;
+    font-size: 1.5rem;
+    line-height: 2rem;
+}
+
+#gr {
+    padding: 2rem;
+}
+
+#gf {
+    padding: 2rem;
+}
+
+#gd {
+    padding: 2rem;
+}
+
+#vc {
+    padding: 2rem;
+}
+
+#vx {
+    padding: 2rem;
+}
+
+#ht {
+    padding: 2rem;
+}
+
+#hr {
+    padding: 2rem;
+}
+
+h3 {
+    padding: 2rem;
+}
+/* a:link{
+    color: rgb(98, 0, 255);
+}
+a:visited{
+    color: crimson;
+}
+a:hover{
+    color: rgb(127, 157, 255);
+}
+a:focus{
+    color: greenyellow;
+}
+a:active{
+    color: lightseagreen;
+} */
+nav a{
+    text-decoration: none;
+    color: rgb(20, 220, 47);
+    text-transform: uppercase;
+}
+nav a:hover{
+    text-decoration: underline;
+}
+
+#articles li:nth-child(odd){    
+    background-color: aqua;
+    width: 300px;
+    border-radius: 5px;
+    padding: 2px;
+}
+h2::after{
+    content: "Важно!";
+    margin-left: 10px;
+    font-size: 12px;
+    background-color: deeppink;
+}
+footer a:hover{
+    color: black;
+}
+footer a:focus{
+    color: black;
+}
+#articles a:focus{
+    color: black;
+}
+#articles a:hover{
+    color: black;
+    text-decoration: line-through;
+}
+footer img{
+    border: 3px solid purple;
+    padding: 2rem;
+}
+em{
+    letter-spacing: 0.2rem;
+}
+main blockquote{
+    background-color: aquamarine;
+    font-style: oblique;
+}
+#paraobh p{
+    background-color: darkgoldenrod;
+}
+#paraobh p:lang(en){
+    font-style: italic;
+    padding: 0.3rem;
+    background-color: cadetblue;
+}
+footer img{
+    border: 10px solid black;
+    border-radius: 35px;
+    border-style: double;
+}
+table.bio{
+    background-color: darkcyan;
+    border: 5px solid black;
+    border-collapse: collapse;
+    color: black;
+    margin: 20px auto;
+}
+table.bio td,
+table.bio th{
+    border: 1px solid navy;
+    padding: 2rem
+}
+table.bio td:nth-child(3){
+    text-align: center;
+    color: black;
+}
+table.bio tbody tr:nth-child(odd){
+    background-color: darkgreen;
+}
+table.bio caption{
+    background-color: aqua;
+}
+
+.my-th{
+    color: brown;
+}
+
+
+#form {
+    background-color: chartreuse;
+    width: 375px;
+    margin: 20px auto;
+    border-radius: 20px;
+    padding: 20px;
+}
+#form input{
+    background-color: blueviolet;
+    border-radius: 5px;
+    padding: 5px 10px 10px;
+    border: 1px blue;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#form input{
+    background-color: aqua;
+}
+
+#form textarea{
+    background-color: darkgreen;
+    border-radius: 5px;
+    padding: 5px 10px 10px;
+    border: 1px blue;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: 100px;
+}
+
+#form textarea[disabled]{
+    background-color: chartreuse;
+    border: gray 1px solid;
+}
+img+h1{
+    margin-top: 15px;
+}
+.bio td:first-child,
+.bio th:first-child{
+    background-color: beige;
+}
+.bio tr:first-child{
+    background-color: beige;
+}

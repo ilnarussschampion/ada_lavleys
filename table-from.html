@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table and form</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <table class="table-example">
+        <caption>Счет</caption>
+        <thead>
+            <tr><th>Наименование</th><th>Цена</th><th>Количество</th><th class="my-th">Итог</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>Фрукты</td><td>100</td><td rowspan="2">2</td><td>200</td></tr>
+            <tr><td>Банан</td><td>100</td><td>5000</td></tr>
+            <tr><td>Арбуз</td><td>100</td><td>50</td><td>5000</td></tr>
+        </tbody>
+        <tr>
+            <td colspan="3">Итого:</td>
+            <td>10200</td>
+        </tr>
+    </table>
+    <form id="form-example" action="">
+        <label for="login">Введите логин</label><br>
+        <input type="text" id="login" placeholder="Логин" required><br>
+
+        <label for="passwordd">Введите пароль</label><br>
+        <input type="password" id="passwordd" placeholder="Пароль" required><br>
+
+        <label for="mail">Введите почту</label><br>
+        <input type="email" id="mail" placeholder="Электронная почта" required><br>
+
+        <input type="radio" id="male" name="gender">
+        <label for="male">M</label>
+        <input type="radio" id="female" name="gender" checked>
+        <label for="female">W</label><br>
+
+        <label for="rolw">Выберите пароль</label><br>
+        <select id="rolw" required>
+            <option value="user">Пользователь</option>
+            <option value="admin">Администратор</option>
+            <option value="boss">БОССИК ПАЦАНЧИИК</option>
+        </select><br>
+
+        <label for="comment">Комментарий</label><br>
+        <textarea id="coomment" placeholder="Ваш Комментарий" disabled></textarea><br>
+
+
+
+
+        <input type="submit" value="Зарегистрироватся">
+        <input type="reset">
+    </form>
+
+    
+</body>
+</html>
